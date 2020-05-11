@@ -85,17 +85,6 @@ def mconcat(a, b):
             res = add(res, 0, tmp[i])
     return res
 
-def iterator(lst):
-    cur = lst
-    def foo():
-        nonlocal cur
-        for i in range(len(cur)):
-            tmp = cur[i]
-        # if cur is None:
-        #     raise StopIteration
-        # tmp = cur.value
-        return tmp
-    return foo
 
 class Node(object):
     def __init__(self, value):
